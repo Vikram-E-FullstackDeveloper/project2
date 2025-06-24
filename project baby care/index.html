@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart BabyCare Buddy</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>👶 Smart BabyCare Buddy</h1>
+
+    <!-- Baby Input Form -->
+    <form id="babyForm">
+      <label for="name">Baby's Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" required />
+
+      <button type="submit">Get Baby Care Plan</button>
+    </form>
+
+    <!-- Output Section -->
+    <div id="output" class="card hidden">
+      <h2>📅 Vaccination Schedule</h2>
+      <ul id="vaccinationList"></ul>
+
+      <h2>📈 Growth Chart</h2>
+      <p>Track baby's weight and height manually.</p>
+
+      <h2>🍲 Food Suggestions</h2>
+      <p id="foodSuggestion"></p>
+    </div>
+
+    <!-- Chatbot Section -->
+    <div class="chatbot">
+      <h2>🤖 Ask Parenting Questions</h2>
+      <div class="chat-controls">
+        <input type="text" id="chatInput" placeholder="Ask something..." />
+        <button onclick="handleChat()">Send</button>
+      </div>
+      <div id="chatBox"></div>
+    </div>
+  </div>
+
+  <!-- ✅ Script linked at the end -->
+  <script src="script.js"></script>
+</body>
+</html>
